@@ -1,0 +1,22 @@
+services:
+  gdylagents:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gdylagents
+    restart: unless-stopped
+    ports:
+      - "2024:2024"
+    env_file:
+      - .env
+    volumes:
+      # 挂载代码目录，方便热更新（开发模式）
+      - .:/app
+      # 隔离容器内 .venv，避免宿主机覆盖
+      - /app/.venv
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:2024/ok"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s

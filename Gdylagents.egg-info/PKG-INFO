@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: Gdylagents
+Version: 0.1.0
+Summary: 我的智能Agents集合
+Requires-Python: >=3.11
+Requires-Dist: langchain-openai>=1.0.2
+Requires-Dist: langchain-anthropic>=1.0.3
+Requires-Dist: pydantic>=2.0.0
+Requires-Dist: rich>=14.0.0
+Requires-Dist: httpx>=0.28.1
+Requires-Dist: markdownify>=1.2.0
+Requires-Dist: deepagents>=0.2.6
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: langgraph-cli[inmem]>=0.1.55
+Requires-Dist: duckduckgo-search>=8.1.1
+Requires-Dist: lxml>=6.0.2

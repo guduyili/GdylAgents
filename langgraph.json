@@ -1,0 +1,12 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "research": "./agent.py:agent",
+    "ralph": "./ralph_agent.py:agent",
+    "tester": "./tester_agent.py:agent"
+  },
+  "env": ".env",
+  "cors": {
+    "allow_origins": ["http://42.192.101.62:3000"]
+  }
+}
